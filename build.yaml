@@ -42,14 +42,14 @@ include:
   # => make sure the `board` field matches the MCU on your keyboard
   ##
 
-    # Chocofi (Temper shield) + nice!nano v2, no display
+    # Chocofi (Corne pinout, no outer column) + nice!nano v2, no display
   - board: nice_nano@2//zmk
-    shield: temper_left
+    shield: corne_left
     artifact-name: chocofi_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_POINTING=y
   - board: nice_nano@2//zmk
-    shield: temper_right
+    shield: corne_right
     artifact-name: chocofi_right
 
   ###
